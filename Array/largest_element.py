@@ -7,6 +7,6 @@ arr=[23,43,2,14,84,90,65]
 # print(max)
 max=arr[0] 
 for n in arr:
-    if(max< n):
+    if(max < n):
         max=n
 print(max)

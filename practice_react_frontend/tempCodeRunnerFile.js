@@ -1,0 +1,1 @@
+ + str1.slice(min) + str2.slice(min)

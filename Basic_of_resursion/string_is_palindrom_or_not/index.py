@@ -1,8 +1,11 @@
 class Solution(object):
     def isPalindrome(s):
-        st=s.replace(" ","")
-        left,right=0,len(st)-1
-        print(type(right))
-        print(st[0:len(st)])
+        temp =s
+        left,right=0,len(s)-1
+        if left < right:
+            print(temp ==s)
 
-Solution.isPalindrome("piyush is a good boy")
+        print(type(right))
+        print(s[0:len(s)])
+
+Solution.isPalindrome("my Name is, piyush")

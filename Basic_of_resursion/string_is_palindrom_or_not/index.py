@@ -1,11 +1,11 @@
 class Solution(object):
-    def isPalindrome(s):
-        temp =s
-        left,right=0,len(s)-1
-        if left < right:
-            print(temp ==s)
+    def isPalindrome(self,s):
+        print(s)
+        if len(s)<=1:
+            return True
+        if s[0]!=s[-1]:
+            return False
+        return self.isPalindrome(s[1:-1])
 
-        print(type(right))
-        print(s[0:len(s)])
-
-Solution.isPalindrome("my Name is, piyush")
+sol=Solution()
+print(sol.isPalindrome("Hannah"))

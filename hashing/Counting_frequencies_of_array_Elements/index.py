@@ -8,7 +8,7 @@ class Solution:
         
         for num in hash_list:
             ar=[]
-            ar.append(([cnt,num]))
+            ar.append([cnt,num])
             cnt+=1
             arr+=ar
         return arr

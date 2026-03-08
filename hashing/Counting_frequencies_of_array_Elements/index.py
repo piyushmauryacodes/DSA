@@ -1,26 +1,23 @@
 class Solution:
     def countFrequencies(self,nums):
-        hash_list=[0]*len(nums)
+        hash_list=[0]*(max(nums)+1)
         arr=[]
-        cnt=0
         for num in nums:
             hash_list[num]+=1
         
-        for num in hash_list:
-            ar=[]
-            ar.append([cnt,num])
-            cnt+=1
-            arr+=ar
+        for cnt, frequency in enumerate(hash_list):
+            if frequency > 0:
+                arr.append([cnt, frequency])
         return arr
 
 
 sol=Solution()
-n=int(input("Enter the size of array: "))
-arr=[]
-while n>=1:
-    num=int(input("Enter your element no. "))
-    arr.append(num)
-    n-=1
+# n=int(input("Enter the size of array: "))
+# arr=[]
+# while n>=1:
+#     num=int(input("Enter your element no. "))
+#     arr.append(num)
+#     n-=1
 
 
-print(sol.countFrequencies(arr))
+print(sol.countFrequencies([1,2,2,1,3,5]))

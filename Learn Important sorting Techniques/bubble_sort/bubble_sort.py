@@ -9,7 +9,6 @@ class Solution:
         return nums
 
 
-
 sol=Solution()
 print(sol.bubbleSort([7,4,1,5,3,1]))
  

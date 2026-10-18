@@ -1,10 +1,7 @@
 def factorial(n):
-    fact=n
     if(n==0 or n==1):
-        fact=1
-    else:
-        fact*=factorial(n-1)
-    return fact
+        return 1
+    return n*factorial(n-1)
 
 
 n=int(input("Enter the number: "))

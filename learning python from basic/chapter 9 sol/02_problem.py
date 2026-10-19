@@ -4,7 +4,7 @@ def game():
     print("You are playing the game!")
     score=random.randint(1,100)
 
-    with open("Highscore.txt","r") as f:
+    with open("02_Highscore.txt","r") as f:
         highscore=f.read()
         if(highscore!=""):
             highscore=int(highscore)
@@ -15,7 +15,7 @@ def game():
             #     file.write("0")
     print(f"Your score: {score}")
     if (score>highscore):
-        with open("Highscore.txt","w") as f:
+        with open("02_Highscore.txt","w") as f:
             f.write(str(score))
     return 
 

@@ -10,7 +10,7 @@
 # print(f"\n Total count: {count}")
 # f.close()
 
-with open("poem.txt") as f:
+with open("01_poem.txt") as f:
     T= f.readlines()
     count=0
     for i in range(len(T)):

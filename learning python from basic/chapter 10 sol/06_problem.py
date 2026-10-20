@@ -3,6 +3,7 @@ class change:
 
 
     def __init__(harry,name,age,language):
+        print(harry,type(harry))
         harry.name=name 
         harry.age=age
         harry.language=language
